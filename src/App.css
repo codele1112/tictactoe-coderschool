@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(27, 27, 114);
 }
 
-.App-link {
-  color: #61dafb;
+.game-title {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-weight: 900;
+  color: yellow;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.message {
+  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-board {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #fff;
+}
+
+.reset {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 2px dotted #fff;
+  border-radius: 10px;
+}
+.reset:hover {
+  color: yellow;
+  border: 2px dotted yellow;
+  cursor: pointer;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.history-title {
+  color: yellowgreen;
+}
+.history {
+  font-style: italic;
+  width: 250px;
+  margin-left: 3rem;
+  border-left: 0.1rem dotted #fff;
+  border-right: 0.1rem dotted #fff;
+
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
 }
